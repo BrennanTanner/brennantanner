@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Bree+Serif&display=swap');
+
+:root {
+--heading-font: 'Bree Serif', serif;
+--paragraph-font: 'Archivo Narrow', sans-serif;
+}
+
+header {
+    font-size: 25px;
+    text-align: center;
+    background-color: #83c5be;
+    border-radius: 1.2em;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 1px;
+    color: #005b63;
+  }
+
+html {
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 1rem auto;
+    max-width: 850px;
+  }
+
+.content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#lastupdated {
+    display: inline;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #83c5be;
+    border-radius: 1em;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+nav a:visited,
+nav a:link {
+  color: #006d77;
+}
+
+nav a:hover {
+  color: white;
+  padding: 0.25em;
+  background-color:  #006d77;
+  border-radius: 5px;
+}
+
+#img1 {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 1.1em;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+footer a:link,
+footer a:visited {
+  color: black;
+}
+footer a:hover {
+  color: #01535a;
+}
