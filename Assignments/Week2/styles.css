@@ -1,51 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
-    --heading-font: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    --heading-font:'Montserrat', sans-serif;
     --paragraph-font: 'Montserrat', sans-serif;
     }
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 300px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 30px;
+    padding: 20px;
+}
+
 header {
-    background: #12AAEB;
+    background: #83c5be;
     color: white;
-    
+    border-radius: 15px 15px 0px 0px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+p {
+    margin: 10px;
+}
+
+a {
+    margin: 10px;
 }
 
 body {
     background: #E2E9EF;
 }    
 
-button {
-    background: #FFCF2D;
-    color:  white;
-}
-
-#content {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 20px;
+#container0 {
+    text-align: center;
+    grid-column: 2 / span 3;
+    max-width: 1020px;
     padding: 10px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #container1 {
     display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+    align-self: start;
+    grid-template-columns: 1fr;
+    grid-column: 2;
+    text-align: left;
     background: white;
-    float: left;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 
 #container2 {
     display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+    align-self: start;
+    grid-template-columns: 1fr;
+    grid-column: 3;
+    text-align: left;
     background: white;
-    float: left;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 
 #container3 {
     display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+    align-self: start;
+    grid-template-columns: 1fr;
+    grid-column: 4;
+    text-align: left;
     background: white;
-    float: left;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
+
+#img1 {
+    max-width: 300px;
+    width: 1fr;
+}
+
+#img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media only screen and (max-width:1075px) {
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #container0 {
+        grid-column: 1 /span 2;
+    }
+
+    #container1 {
+        grid-column: auto;
+    }
+    
+    #container2 {
+        grid-column: auto;
+    }
+    
+    #container3 {
+        grid-column: auto;
+    }
+
+    #img1 {
+        max-width:100%;
+        max-height:100%;
+    }
+
+}
+  @media only screen and (max-width:685px) {
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #container0 {
+        grid-column: auto;
+    }
+
+  }

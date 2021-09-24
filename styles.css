@@ -27,6 +27,10 @@ html {
     max-width: 850px;
   }
 
+  body {
+    background: #E2E9EF;
+}    
+
 .content {
     max-width: 750px;
     margin: 0 auto;
