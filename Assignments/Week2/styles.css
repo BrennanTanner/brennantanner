@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
 :root {
-    font-family: 'Montserrat', sans-serif;
-    --heading-font:'Montserrat', sans-serif;
-    font-weight: 600;
-    --paragraph-font: 'Montserrat', sans-serif;
-    font-weight: 400;
+ 
     }
 
 #content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     display: grid;
     grid-template-columns: 1fr 300px 300px 300px 1fr;
     grid-template-rows: auto auto auto;
@@ -23,17 +22,16 @@ header {
 }
 
 h1 {
+
     margin-left: 20px;
 }
 
-p {
+p { 
     margin: 10px;
-    font-size: 15pt;
 }
 
 a {
     padding: 5px;
-    font-size: 12pt;
     margin-left: 5px;
 }
 
@@ -66,6 +64,8 @@ body {
 }
 
 #container1 {
+    font-size: 15pt;
+    color: rgb(95, 95, 95);
     display: grid;
     align-self: start;
     grid-template-columns: 1fr;
@@ -77,6 +77,8 @@ body {
 }
 
 #container2 {
+    font-size: 15pt;
+    color: rgb(95, 95, 95);
     display: grid;
     align-self: start;
     grid-template-columns: 1fr;
@@ -88,6 +90,8 @@ body {
 }
 
 #container3 {
+    font-size: 15pt;
+    color: rgb(95, 95, 95);
     display: grid;
     align-self: start;
     grid-template-columns: 1fr;
@@ -108,6 +112,36 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#lastupdated {
+    display: inline;
+}
+
+footer {
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #83c5be;
+    border-radius: 1em;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 12pt;
+}
+
+footer a:link,
+footer a:visited {
+    font-size: 10pt;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: black;
+}
+
+footer a:hover {
+    background-color: #83c5be;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0px;
+    color: #006d77;
 }
 
 @media only screen and (max-width:1040px) {
