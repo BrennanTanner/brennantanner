@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
     font-family: 'Montserrat', sans-serif;
     --heading-font:'Montserrat', sans-serif;
+    font-weight: 600;
     --paragraph-font: 'Montserrat', sans-serif;
+    font-weight: 400;
     }
 
 #content {
@@ -16,7 +18,7 @@
 
 header {
     background: #83c5be;
-    color: white;
+    color: #005b63;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -26,10 +28,24 @@ h1 {
 
 p {
     margin: 10px;
+    font-size: 15pt;
 }
 
 a {
-    margin: 10px;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+a:visited,
+a:link {
+  color: #006d77;
+}
+
+a:hover {
+  color: white;
+  padding: 5px;
+  background-color:  #006d77;
+  border-radius: 5px;
 }
 
 body {
@@ -37,6 +53,8 @@ body {
 }    
 
 #container0 {
+    position: relative;
+    top: -30px;
     text-align: center;
     grid-column: 2 / span 3;
     max-width: 1020px;
@@ -89,7 +107,7 @@ body {
     width: 50%;
 }
 
-@media only screen and (max-width:1075px) {
+@media only screen and (max-width:1040px) {
 
     #content {
         display: grid;
@@ -97,7 +115,9 @@ body {
     }
 
     #container0 {
-        grid-column: 1 /span 2;
+        margin-left: -30px;
+        margin-right: -30px;
+        grid-column: 1 / span 2;
     }
 
     #container1 {
