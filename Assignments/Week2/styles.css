@@ -110,6 +110,11 @@ body {
 
 #lastupdated {
     display: inline;
+    font-size: 12pt;
+}
+
+#footer {
+    font-size: 12pt;
 }
 
 footer {
@@ -120,12 +125,11 @@ footer {
     border-radius: 1em;
     padding-bottom: 5px;
     padding-top: 5px;
-    font-size: 12pt;
 }
 
 footer a:link,
 footer a:visited {
-    font-size: 10pt;
+    font-size: 12pt;
     font-family: 'Archivo Narrow', sans-serif;
     color: black;
 }
