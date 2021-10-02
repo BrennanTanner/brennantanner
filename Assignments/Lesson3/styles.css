@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto&display=swap');
+
+html {
+    margin: -10px;
+    background-color: #EBEBFF;
+}
+
+header {
+    padding-top: -50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+ }
+ 
+ header ul {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     overflow: hidden;
+     background-color: #6287F9;
+ }
+ 
+ header li {
+     float: left;
+ }
+ 
+ header li a {
+     display: block;
+     color: #EBEBFF;
+     text-align: center;
+     font-size: 15pt;
+     transition: 0.5s;
+     padding: 30px 16px;
+     text-decoration: none;
+     max-height: 20px;
+ }
+ 
+ 
+ header li a:hover:not(.active) {
+     font-size: 18pt;
+     transition: 0.5s;
+     background-color: #4E79F9;
+     
+ }
+
+
+main {
+    margin: 30px 80px;
+    font-family: 'Roboto', sans-serif;
+    color: #343434;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 35pt;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20pt;
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16pt;
+    font-style: italic;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+#coolors {
+    margin: 20px 10%;
+}
+
+table,th {
+border: 2pt solid #343434;
+border-radius: 7px;
+}
+
+#lastupdated {
+    display: inline;
+}
+
+#sample1 {
+    font-weight: 1000;
+    font-size: 35pt;
+}
+
+#sample2 {
+    color: #EBEBFF;
+    background-color: #6287F9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 15pt;
+}
+#sample3 {
+    color: #EBEBFF;
+    background-color: #6287F9;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+#sample4 {
+    font-weight: 1000;
+    font-size: 35pt;
+}
+#sample5 {
+    font-weight: 700;
+    font-size: 20pt;
+    font-weight: 900;
+}
+#sample6 {
+    font-weight: 700;
+    font-size: 16pt;
+    font-style: italic;
+}
+#sample7 {
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+footer {
+    font-family: 'Archivo Narrow', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    color: #EBEBFF;
+    background-color: #6287F9;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+footer a {
+    color: #EBEBFF;
+}
+
+.collapsible {
+    position: fixed;
+visibility: collapse;
+} 
+
+@media only screen and (max-width: 650px)
+{
+    .collapsible {
+        position:initial;
+        visibility: visible;
+        background-color: #6287F9;
+        color: #EBEBFF;
+        padding: 14.5px;
+        width: 100%;
+        border: none;
+        text-align: left;
+
+      }
+ 
+      header li {
+        float:none;
+    }
+     .collapsible:hover {
+        background-color: #4E79F9;
+      }
+      
+      .content {
+        padding: 0 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    
+
+}
