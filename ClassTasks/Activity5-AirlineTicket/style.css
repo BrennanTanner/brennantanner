@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    background-color: rgb(184, 184, 184);
+    font-family: Lato, sans-serif;
+}
+
+body {
+    width: 768px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 1px gray;
+}
+
+header {
+    color: rgb(13, 69, 125);
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: block;
+}
+.logo p {
+
+    margin-top: -5px;
+    font-size: 7pt;
+    margin-left: 30px;
+}
+.logo img {
+    width: 150px;
+    border-top-left-radius: 15px;
+}
+
+.name {
+    font-size: 10pt;
+    font-weight: lighter;
+    align-self: center;
+margin-right: 20px;
+}
+
+#flight-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #001b35;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#flight-summary p {
+    color: rgb(13, 69, 125);
+}
+
+#flight-summary img {
+    grid-column: 2;
+}
+#arrival {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#departure {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#flight-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    color: rgb(13, 69, 125);
+}
+#flight-data div p {
+    font-size: 10pt;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#flight-data div h2 {
+    margin-top: -10pt;
+    font-size: 16pt;
+    font-weight: lighter;
+    text-align: center;
+}
+/* 
+#date {
+    grid-column: 1;
+    grid-row: 1;
+}
+#flight {
+    grid-column: 2;
+    grid-row: 1;
+}
+#gate {
+    grid-column: 3;
+    grid-row: 1;
+} */
+
+footer {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+}
