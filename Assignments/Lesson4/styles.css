@@ -6,12 +6,13 @@ html {
 }
 
 header {
-   background-color: #ebebff;
+   background: rgb(0,45,140);
+   background: linear-gradient(151deg, rgba(0,45,140,1) 0%, rgba(119,178,255,1) 38%, rgba(205,247,255,1) 81%);
    font-family: "Roboto", sans-serif;
    font-weight: 900;
    display: flex;
    color: #343434;
-   margin-left: 30px;
+
 }
 
 #title {
@@ -29,7 +30,7 @@ nav ul {
    margin: 0px;
    padding: 0px;
    overflow: hidden;
-   background-color: #6287f9;
+   background-color: rgb(0,45,140);
 }
 
 nav li {
@@ -50,7 +51,7 @@ nav li a {
 nav li a:hover:not(.active) {
    font-size: 18pt;
    transition: 0.5s;
-   background-color: #4e79f9;
+   background-color: rgb(0,45,140);
 }
 
 main {
@@ -108,11 +109,11 @@ main p {
    text-align: center;
    overflow: hidden;
 
-   background-color: #6287f9;
+   background-color: rgb(0,45,140);
 }
 
 #fiveDay ul li {
-   padding: 14px 20px;
+   padding: 14px 80px;
    display: inline-block;
 }
 
@@ -124,7 +125,7 @@ main p {
 #fiveDay li img:hover:not(.active) {
    width: 55px;
    transition: 0.5s;
-   background-color: #4e79f9;
+   background-color: rgb(0,45,140);
 }
 
 #article {
@@ -144,7 +145,8 @@ main p {
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    margin: 50px 0px;
    color: #343434;
-   background-color: #ebebff;
+   background: rgb(0,45,140);
+   background: linear-gradient(151deg, rgba(0,45,140,1) 0%, rgba(119,178,255,1) 38%, rgba(205,247,255,1) 81%);
 }
 
 #contactImg {
@@ -195,7 +197,7 @@ footer {
    margin: 0 auto;
    text-align: center;
    color: #ebebff;
-   background-color: #6287f9;
+   background-color: rgb(0,45,140);
    padding-bottom: 5px;
 }
 
@@ -208,29 +210,42 @@ footer a {
    visibility: collapse;
 }
 
-@media only screen and (max-width: 725px) {
-   llapsible {
-      position: initial;
-      visibility: visible;
-      background-color: #6287f9;
-      color: #ebebff;
-      padding: 14.5px;
-      width: 100%;
-      border: none;
-      text-align: left;
-   }
-   nav li {
-      float: none;
-   }
-   .collapsible:hover {
-      background-color: #4e79f9;
+@media only screen and (max-width: 1280px)
+{
+   #fiveDay ul li {
+      padding: 14px 50px;
    }
 
-   .content {
-      padding: 0 0px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
-   }
+}
+
+@media only screen and (max-width: 730px)
+{
+    .collapsible {
+        position:initial;
+        visibility: visible;
+        background-color: rgb(0,45,140);
+        color: #EBEBFF;
+        padding: 14.5px;
+        width: 100%;
+        border: none;
+        text-align: left;
+
+      }
+ 
+      nav li {
+        float:none;
+    }
+     .collapsible:hover {
+        background-color: rgb(0,45,140);
+      }
+      
+      .content {
+        padding: 0 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    
+
 }
