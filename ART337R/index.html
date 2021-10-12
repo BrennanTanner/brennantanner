@@ -1,133 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="styles.css" />
-      <title>Weather News Happens</title>
-   </head>
-   <body>
-      <header>
-         <img src="images/logo.png" alt="logo" height="200px" width="200px" />
-         <div id="title">
-            <h1>The Recipe Calculator</h1>
-            <h2>A study on user experience and application design</h2>
-         </div>
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Recipe Calculator</title>
+  </head>
+  <body>
+    <div class="space stars1"></div>
+    <div class="space stars2"></div>
+    <div class="space stars3"></div>
+    <header>
+      <div id="title">
+        <h1>The Recipe Calculator</h1>
+        <h2>A study on user experience and application design</h2>
+      </div>
+    </header>
 
-      <nav>
-         <button class="collapsible">
-            <img src="images/menu.png" alt="menu" width="50px" height="50px" />
-         </button>
-         <div class="content">
-            <ul>
-               <li>
-                  <a href="preston-4.html"> Intro </a>
-               </li>
-               <li>
-                  <a href="preston-4.html"> Initial Research </a>
-               </li>
-               <li>
-                  <a href="preston-4.html"> Rounds of Usability </a>
-               </li>
-               <li>
-                  <a href="preston-4.html"> Final Product </a>
-               </li>
-               <li>
-                  <a href="preston-4.html"> Conclusion </a>
-               </li>
-               <li>
-                  <a href="preston-4.html"> Gallery </a>
-               </li>
-            </ul>
-         </div>
-      </nav>
-      
-      <main>
-         <h2>Introduction</h2>
-         <div id="introImage">
-               <h4>Weather Summary</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-               <img src="images/example1.png" alt="display example1">
-         </div>
-         <div id="fiveDay">
-            <h4>Five Day Forecast</h4>
-            <ul>
-               <li>
-                  <img src="images/V1.png" alt="day of the week" height="500px" width="281px"/>
-               </li>
-               <li>
-                  <img src="images/V2.png" alt="day of the week" height="500px" width="281px"/>
-               </li>
-               <li>
-                  <img src="images/V3.png" alt="day of the week" height="500px" width="281px"/>
-               </li>
-               <li>
-                  <img src="images/V4.png" alt="day of the week" height="609px" width="281px"/>
-               </li>
-               <li>
-                  <img src="images/V5.png" alt="day of the week" height="609px" width="281px"/>
-               </li>
-            </ul>
-         </div>
-         <div id="article">
-            <div>
-            <h4>Article Title</h4>
-            <p>           
-                <img  id="articleImg" src="images/300x200.png" alt="day of the week" height="160px" width="200px"/>
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <div id="fiveDay">
-               <h4>Five Day Forecast</h4>
-               <ul>
-                  <li>
-                     <img src="images/step1.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-                  <li>
-                     <img src="images/step2.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-                  <li>
-                     <img src="images/step3.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-                  <li>
-                     <img src="images/step4.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-                  <li>
-                     <img src="images/step5.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-                  <li>
-                     <img src="images/step6.png" alt="day of the week" height="609px" width="281px"/>
-                  </li>
-               </ul>
+    <nav>
+      <button class="collapsible">
+        <img src="images/menu.svg" alt="menu" width="50px" height="50px" />
+      </button>
+      <div class="content">
+        <ul>
+          <li>
+            <img
+              id="logo"
+              src="images/logo.svg"
+              alt="logo"
+              height="50px"
+              width="50px"
+            />
+          </li>
+          <li>
+            <a href="#intro"> Intro </a>
+          </li>
+          <li>
+            <a href="#research"> Initial Research </a>
+          </li>
+          <li>
+            <a href="#usability"> Rounds of Usability </a>
+          </li>
+          <li>
+            <a href="#final"> Final Product </a>
+          </li>
+          <li>
+            <a href="#conclusion"> Conclusion </a>
+          </li>
+          <li>
+            <a href="#figma">Figma </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div id="intro">
+        <h2>Introduction</h2>
+
+        <h4>The Problem</h4>
+        <img id="example1" src="images/example1.gif" alt="display example1" />
+        <p>
+          My wife and I have recently gotten into trying new recipes. We love to
+          cook and will often look up recipes on the Internet to try. But we
+          have noticed that we keep running into the same problems.<br />
+          Here is my list of the most frequent problems we face with keeping and
+          changing recipes:
+        </p>
+        <ol>
+          <li>
+            Returning to a website to find a recipe can be tiresome as you often
+            have to scroll far down the page to find what you are looking for.
+          </li>
+          <li>
+            Serving sizes are all over the place. Some recipes will give us
+            leftovers for days and others don’t seem to be enough.
+          </li>
+          <li>
+            We are not very good at doing the conversions to change the recipe
+            how we need.
+          </li>
+          <li>
+            We do not have a place to keep our favorite recipes, we usually just
+            keep photos of the recipe in our phone’s photo app, which can get
+            disorganized.
+          </li>
+        </ol>
+        
+      </div>
+      <div id="research">
+        <h2>Initial Research</h2>
+        <p>
+          I started research by looking into different recipe apps, I found many
+          apps that had features that I wanted to include in my own design. I
+          jotted down ideas that looked interesting and that I wanted to try out
+          myself. I also looked into apps that weren’t for cooking, but that
+          used a database-type system. These were especially helpful for me. I
+          saw their take on managing information and how they present it to the
+          user. Once I had a notebook full of ideas, I drew out my first rough
+          draft on some note cards.
+        </p>
+        <img id="notes" src="images/notes.JPG" alt="display example1" />
+      </div>
+
+      <div id="usability">
+        <h2>Rounds of Usibility Testing</h2>
+        <h3>Scenarios</h3>
+        <p>
+          To create my scenarios, I looked at what a new user would need to do
+          after installing the app. I wanted to create a very simple and
+          effective process for new users. So, I considered the main focus of
+          the app itself, to save recipes from photos or written in by the user
+          into a database, to be able to multiply the serving size and
+          ingredients, and to be able to edit saved recipes.<br /><br />
+
+          Scenario 1: You have just downloaded the recipe calculator app and
+          would like to save a handwritten recipe for “orange chicken salad”
+          from a note card. (I changed this one up occasionally by telling the
+          user that they already have a photo saved in their phone and that they
+          need to write in a new recipe by hand)<br /><br />
+          Scenario 2: After scanning in your orange chicken salad recipe to the
+          app, you would like to double the recipe’s ingredients.<br /><br />
+          Scenario 3: You have experimented with your recipe and now want to
+          edit the orange chicken salad recipe so that you add double the
+          chicken.
+        </p>
+      </div>
+      <div id="imgBar">
+        <ul>
+          <li>
+            <div id="small">
+              <h3>Basic Iterations</h3>
+              <h4>notecards</h4>
+              <p>
+                Here I used notecards to layout the first iteration of my app.
+                The purpose of this iteration is to only figure out the layout
+                for buttons, images, and text. I had three people try this
+                version of the app, my wife and two classmates. I learned that,
+                although the new recipe button was nice, I should probably
+                remove the footer and leave the navigation to the header.
+              </p>
             </div>
-      </main>
-      <footer>
-         <div id="footer">
-            <section id="contactImg">
-            <img src="images/300x200.png" alt="day of the week" height="160px" width="300px"/>
-            </section>
-         <section id="contactInfo">
-            <h2 id="ci1">Contact Information</h2>
-         <section id="ci2">
-            <h3><img src="images/location.png" height="30px" width="30px"> Location<br><img src="images/phone.png" height="30px" width="30px"> Phone<br><img src="images/mail.png" height="30px" width="30px"> mail@mail.com</h3>
-         </section> 
-         <section id="ci3">
-            <img src="images/twitter.png" height="50px" width="50px">
-            <img src="images/youtube.png" height="50px" width="50px">
-            <img src="images/facebook.png" height="50px" width="50px">
-         </section>
-         </section>
-         </div>
-         <p>
-            © 2021 | Brennan L. Tanner | Idaho |
-            <a href="https://byui.edu/online">BYUI Online Learning</a>
-         </p>
-         <p>
-            <span id="lastupdated"></span>
-         </p>
-      </footer>
-      <script src="../../lastupdated.js"></script>
-      <script src="script.js"></script>
-   </body>
+            <img
+              src="images/V1.png"
+              alt="day of the week"
+              height="500px"
+              width="281px"
+            /><img />
+          </li>
+          <li>
+            <div id="small">
+              <h3>Wire Frame</h3>
+              <h4>Figma</h4>
+              <p>
+                This was my first basic outline on Figma. I used basic grey
+                boxes represent my wire frame buttons. I used three friends at a
+                get together for my usability testing. I learned that the add
+                recipe button was kind of a tricky concept. Although it seemed
+                simple to me, it was not simple to my users, so I needed to find
+                a new place to put the add recipe.
+              </p>
+            </div>
+            <img
+              src="images/V2.png"
+              alt="day of the week"
+              height="500px"
+              width="281px"
+            />
+          </li>
+          <li>
+            <div id="small">
+              <h3>Design Work v.1</h3>
+              <h4>Figma</h4>
+              <p>
+                This was my first attempt at designing the interface area. I was
+                just learning Figma controls and got ahead of myself. I used my
+                wife for the usability testing on this version because she is an
+                art major and has a real knack for design. Unfortunately, she
+                was my only user testing applicant for this version. After
+                inspecting the app, she used her veto power to tell me to get
+                back to the drawing board. “This ain't it, chief” she said.
+              </p>
+            </div>
+            <img
+              src="images/V3.png"
+              alt="day of the week"
+              height="500px"
+              width="281px"
+            />
+          </li>
+          <li>
+            <div>
+              <h3>Design Work v.2</h3>
+              <h4>Figma</h4>
+              <p>
+                I decided to get back to basics, I use only a grey scale for
+                color and focused mainly on aspect ratios, fonts, and
+                positioning. It was a good decision in the long run because I
+                received many compliments during the UX testing. After I
+                received my wife’s design approval, I asked a classmate and two
+                friends to try my scenarios. This was successful and I could now
+                finally work on color and other final touches
+              </p>
+            </div>
+
+            <img
+              src="images/V4.png"
+              alt="day of the week"
+              height="609px"
+              width="281px"
+            />
+          </li>
+          <li>
+            <div>
+              <h3>Final Iteration</h3>
+              <h4>Figma</h4>
+              <p>
+                Finally, I worked out some colors and a nice gradient to make
+                the project look professional. I used coolors.com and found a
+                nice theme. I will explain more about the final app further on
+                below.
+              </p>
+            </div>
+
+            <img
+              src="images/V5.png"
+              alt="day of the week"
+              height="609px"
+              width="281px"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div id="final">
+        <h2>Final Product</h2>
+        <h4>Step by Step Process</h4>
+        <p>
+          Here I will show you what using the app looks like. This is a
+          simplified version of the user testing version. You can find the
+          complete Figma view further below.
+        </p>
+      </div>
+      <div id="imgBar">
+        <div id="steps">
+          <ul>
+            <li>
+              <div>
+                <h3>Front Page</h3>
+                <p>
+                  Here is the central hub for the app. Here you can do a number
+                  of useful things. You can view saved recipes, add new recipes,
+                  sort recipes by tile, list, or favorites first.
+                </p>
+              </div>
+              <img
+                src="images/step1.png"
+                alt="day of the week"
+                height="609px"
+                width="281px"
+              />
+            </li>
+            <li>
+              <div>
+                <h3>Adding a New Recipe</h3>
+                <p>
+                  There are a few options for adding recipes to the main
+                  database. You can access the phone's camera to scan in a
+                  recipe, you can scan a photo or screenshot saved to the phone,
+                  or you can write in a recipe from hand. This makes adding
+                  recipes versitile and still simple to new users.
+                </p>
+              </div>
+              <img
+                src="images/step2.png"
+                alt="day of the week"
+                height="609px"
+                width="281px"
+              />
+            </li>
+            <li>
+              <div>
+                <h3>Editing a Recipe</h3>
+                <p>
+                 After scanning in a recipe you will be taken to the edit screen, This is the same screen you will see if you are editing a saved recipe, or hand writing a new entry. This is by far the busiest and most difficult page for users that I found during usability testing. People often got lost here, but using thier feedback and data, I believe that I have finely tuned this process to make it as simple as possible. The user is able to add a picture of the finished food, a title, and add or edit any data as part of the recipe.  
+                </p>
+              </div>
+              <img
+                src="images/step3.png"
+                alt="day of the week"
+                height="609px"
+                width="281px"
+              />
+            </li>
+            <li>
+              <div>
+                <h3>Doubling the Recipe</h3>
+                <p>
+                 This is where the principle concept finally takes place. When you open a saved recipe this is where the recipes lives. You can just view the recipe as is, Change the serving ammount, or go into the edit tab.  
+                </p>
+              </div>
+              <img
+                src="images/step5.gif"
+                alt="day of the week"
+                height="609px"
+                width="281px"
+              />
+            </li>
+            <li>
+              <div>
+                <h3>Automatic Conversion</h3>
+                <p>
+                 Notice that upon doubling the recipe that the orange sauce changed from Tablespoons to Cups. There is an automatic conversion between measurments so that the most simple unit of measurment is used always. The user can also change the unit of measurement however they like, they can even use metric! 
+                </p>
+              </div>
+              <img
+                src="images/step6.png"
+                alt="day of the week"
+                height="609px"
+                width="281px"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="conclusion">
+        <h2>Conclusion</h2>
+        <img id ="example2" src="images/example2.png" alt="Example 2">
+        <p>
+          This project was an excellent intro to UX design. I came into this project thinking that user interface was equal to user experience. I learned that just because an interface looks good does not mean that it will make a good experience for the user. It was fairly tricky to make something that was both pleasant to the eye and easy to navigate. I still have much to learn but after this study I am in a better position than I started in. I learned the importance of each step along the way. Every time I tried to skip one it only gave me more work to do in the long run. I learned the value of everyday conventions, like I used in my icons and images. I also began to see the world through a different lens. I see products and appliances not for how they simply look, but also how they are used. Everyday objects will become puzzles to me, and I will think “how would I change this?”, “how could I make this better?”
+        </p>
+      </div>
+      <div id="figma">
+        <h2>Figma Links</h2>
+        <ul>
+          <li>
+            <a href="images/Usability Test V1.0.pdf">Basic Iteration</a>
+          </li>
+          <li>
+        <a href="https://www.figma.com/file/sEBJUnCH7V0lf7sWbkasAQ/Recipe-Calulator?node-id=3%3A92">Wire Frame</a>
+      </li>
+      <li>
+        <a href="https://www.figma.com/file/sEBJUnCH7V0lf7sWbkasAQ/Recipe-Calulator?node-id=36%3A3">Design Work</a>
+      </li>
+      <li>
+        <a href="https://www.figma.com/file/sEBJUnCH7V0lf7sWbkasAQ/Recipe-Calulator?node-id=76%3A2194">Final Iteration</a>
+      </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div id="footer">
+          <img
+          id="contactImg"
+            src="images/77123823.jfif"
+            alt="Hi my name is Brennan!"
+          />
+        <section id="contactInfo">
+          <h2>Contact Information</h2>
+            <h3>
+              <img src="images/mail.svg" height="30px" width="30px" />
+              tan18010@byui.edu
+            </h3>
+            <h3>
+              <img src="images/github.svg" height="30px" width="30px" />
+              github.com/BrennanTanner
+            </h3>
+
+        </section>
+      </div>
+      <p>
+        © 2021 | Brennan L. Tanner | Idaho |
+        <a href="https://byui.edu/online">BYUI Online Learning</a>
+      </p>
+      <p>
+        <span id="lastupdated"></span>
+      </p>
+    </footer>
+    <script src="../../lastupdated.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
