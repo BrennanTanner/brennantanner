@@ -325,6 +325,7 @@ main p {
   margin-bottom: 20px;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition:  visibility 0s, opacity 0.3s linear;
   transition: visibility 0s, opacity 0.3s linear;
 }
 
@@ -343,6 +344,7 @@ main p {
   text-align: left;
   opacity: 0;
   visibility: visible;
+  -webkit-transition:  visibility 0s, opacity 0.3s linear;
   transition: visibility 0s, opacity 0.3s linear;
 }
 
@@ -463,6 +465,10 @@ footer a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+  
+  #imgBar ul li {
+    padding: 14px 0px;
   }
 
   #footer {
