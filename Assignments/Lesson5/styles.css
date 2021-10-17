@@ -6,23 +6,42 @@ html {
 }
 
 #banner {
-Background-color: rgb(0,45,140);
-color: #f1f1f1;
-padding: 16px;
-margin: 0 auto;
-font-family: "Roboto", sans-serif;
-text-align: center;
-display:none;
+   background-color: rgb(253, 221, 76);
+   padding: 20px;
+   left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 80%;
+   text-align: center;
+   display: none;
+   box-shadow: 3px 5px 10px;
+   position: absolute;
+}
+
+#bannerContent{
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+   font-family: "Roboto", sans-serif;
+   color: #343434;
+}
+
+#banner button {
+   margin-left: 20px; 
+   background-color: rgb(253, 221, 76);
+	border: none;
+   cursor: pointer;
 }
 
 header {
    background: rgb(0,45,140);
-   background: linear-gradient(151deg, rgba(0,45,140,1) 0%, rgba(119,178,255,1) 38%, rgba(205,247,255,1) 81%);
+   background: linear-gradient(180deg, rgba(0,45,140,1) 0%, rgb(6, 73, 219) 100%);
    font-family: "Roboto", sans-serif;
    font-weight: 900;
    display: flex;
-   color: #343434;
-
+   color: #f1f1f1;
 }
 
 #title {
@@ -40,7 +59,7 @@ nav ul {
    margin: 0px;
    padding: 0px;
    overflow: hidden;
-   background-color: rgb(0,45,140);
+   background-color: rgb(0, 45, 140);
 }
 
 nav li {
@@ -61,11 +80,11 @@ nav li a {
 nav li a:hover:not(.active) {
    font-size: 18pt;
    transition: 0.5s;
-   background-color: rgb(0,45,140);
+   background-color: rgb(0, 45, 140);
 }
 
-nav ul .active{
-   background-color: rgb(48, 113, 253);
+nav ul .active {
+   background-color: rgb(6, 73, 219);
 }
 main {
    margin: 30px 80px;
@@ -103,16 +122,17 @@ main p {
    background-attachment: fixed;
    background-size: 100%;
    background-position: bottom;
-   background-repeat:no-repeat;
+   background-repeat: no-repeat;
 }
 
 #weatherSummary {
    float: left;
-   background-color: #f1f1f1;
+   color: #f1f1f1;
+   background-color: rgb(0, 45, 140, 0.6);
    margin: 15px 20px;
    padding: 10px;
-   max-width: 400px;
-   max-height:330px;
+   max-width: 300px;
+   max-height: 330px;
 }
 #fiveDay {
    margin-top: 20px;
@@ -125,7 +145,8 @@ main p {
    text-align: center;
    overflow: hidden;
 
-   background-color: rgb(0,45,140);
+   background: rgb(0,45,140);
+   background: linear-gradient(180deg, rgba(0,45,140,1) 0%, rgb(6, 73, 219) 100%);
 }
 
 #fiveDay ul li {
@@ -142,7 +163,7 @@ main p {
 #fiveDay li img:hover:not(.active) {
    width: 55px;
    transition: 0.5s;
-   background-color: rgb(0,45,140);
+   background-color: rgb(0, 45, 140);
 }
 
 #article {
@@ -161,9 +182,9 @@ main p {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    margin: 50px 0px;
-   color: #343434;
+   color: #f1f1f1;
    background: rgb(0,45,140);
-   background: linear-gradient(151deg, rgba(0,45,140,1) 0%, rgba(119,178,255,1) 38%, rgba(205,247,255,1) 81%);
+   background: linear-gradient(0deg, rgba(0,45,140,1) 0%, rgba(10,89,255,1) 100%);
 }
 
 #contactImg {
@@ -183,7 +204,6 @@ main p {
    grid-column: 1 / span 3;
    grid-row: 1;
    margin-bottom: -30px;
-
 }
 
 #ci2 {
@@ -214,7 +234,7 @@ footer {
    margin: 0 auto;
    text-align: center;
    color: #ebebff;
-   background-color: rgb(0,45,140);
+   background-color: rgb(0, 45, 140);
    padding-bottom: 5px;
 }
 
@@ -227,42 +247,36 @@ footer a {
    visibility: collapse;
 }
 
-@media only screen and (max-width: 1280px)
-{
+@media only screen and (max-width: 1280px) {
    #fiveDay ul li {
       padding: 14px 50px;
    }
-
 }
 
-@media only screen and (max-width: 730px)
-{
-    .collapsible {
-        position:initial;
-        visibility: visible;
-        background-color: rgb(0,45,140);
-        color: #EBEBFF;
-        padding: 14.5px;
-        width: 100%;
-        border: none;
-        text-align: left;
+@media only screen and (max-width: 730px) {
+   .collapsible {
+      position: initial;
+      visibility: visible;
+      background-color: rgb(0, 45, 140);
+      color: #ebebff;
+      padding: 14.5px;
+      width: 100%;
+      border: none;
+      text-align: left;
+   }
 
-      }
- 
-      nav li {
-        float:none;
-    }
-     .collapsible:hover {
-        background-color: rgb(0,45,140);
-      }
-      
-      .content {
-        padding: 0 0px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: #f1f1f1;
-      }
-    
+   nav li {
+      float: none;
+   }
+   .collapsible:hover {
+      background-color: rgb(0, 45, 140);
+   }
 
+   .content {
+      padding: 0 0px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+   }
 }
