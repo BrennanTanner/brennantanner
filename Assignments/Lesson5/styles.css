@@ -12,9 +12,8 @@ padding: 16px;
 margin: 0 auto;
 font-family: "Roboto", sans-serif;
 text-align: center;
-display: none;
+display:none;
 }
-
 
 header {
    background: rgb(0,45,140);
@@ -104,6 +103,7 @@ main p {
    background-attachment: fixed;
    background-size: 100%;
    background-position: bottom;
+   background-repeat:no-repeat;
 }
 
 #weatherSummary {
@@ -131,6 +131,7 @@ main p {
 #fiveDay ul li {
    padding: 14px 80px;
    display: inline-block;
+   color: #f1f1f1;
 }
 
 #fiveDay li img {

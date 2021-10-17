@@ -1,28 +1,24 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
-function myFunction() {
-  var day = getDay();
-  if (day == 7) {
-    alert("hey");
-  } else {
-    alert("hi");
-  }
-}
-
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
+   coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+         content.style.maxHeight = null;
+      } else {
+         content.style.maxHeight = content.scrollHeight + "px";
+      }
+   });
 }
 //I got my collapsible menu from the W3 website. I copy and pasted and made minor adjustments myself. https://www.w3schools.com/howto/howto_js_collapsible.asp
 
+var d = new Date();
+var n = d.getDay();
+
+if (5 == n){document.getElementById("banner").style.display = "inherit";}
 
 
-//document.getElementById("banner").style.display = "unset";
+
+
