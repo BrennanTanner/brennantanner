@@ -17,7 +17,7 @@ for (i = 0; i < coll.length; i++) {
 var d = new Date();
 var n = d.getDay();
 
-if (6 == n){document.getElementById("banner").style.display = "flex";}
+if (5 == n){document.getElementById("banner").style.display = "flex";}
 
 function closeBanner() {
   document.getElementById("banner").style.display = "none";
