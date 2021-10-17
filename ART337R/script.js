@@ -13,3 +13,5 @@ for (i = 0; i < coll.length; i++) {
    });
 }
 //I got my collapsible menu from the W3 website. I copy and pasted and made minor adjustments myself. https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+
