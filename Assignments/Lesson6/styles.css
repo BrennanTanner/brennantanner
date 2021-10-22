@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto&display=swap");
+
+html {
+   margin: -10px;
+   background-color: #f1f1f1;
+}
+
+#banner {
+   background-color: rgb(253, 221, 76);
+   padding: 20px;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   text-align: center;
+   display: none;
+   box-shadow: 3px 5px 10px;
+   position: absolute;
+}
+
+#bannerContent {
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: "Roboto", sans-serif;
+   color: #343434;
+}
+
+#banner button {
+   margin-left: 20px;
+   background-color: rgb(253, 221, 76);
+   border: none;
+   cursor: pointer;
+}
+
+header {
+   background: rgb(0, 45, 140);
+   background: linear-gradient(
+      180deg,
+      rgba(0, 45, 140, 1) 0%,
+      rgb(6, 73, 219) 100%
+   );
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+   display: flex;
+   color: #f1f1f1;
+}
+
+#title {
+   margin: 20px 0px 0px -10px;
+}
+
+nav {
+   padding-top: -50px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+   overflow: hidden;
+   background-color: rgb(0, 45, 140);
+}
+
+nav li {
+   float: left;
+}
+
+nav li a {
+   display: block;
+   color: #ebebff;
+   text-align: center;
+   font-size: 15pt;
+   transition: 0.5s;
+   padding: 30px 16px;
+   text-decoration: none;
+   max-height: 20px;
+}
+
+nav li a:hover:not(.active) {
+   font-size: 18pt;
+   transition: 0.5s;
+   background-color: rgb(0, 45, 140);
+}
+
+nav ul .active {
+   background-color: rgb(6, 73, 219);
+}
+main {
+   margin: 30px 80px;
+   font-family: "Roboto", sans-serif;
+   color: #343434;
+}
+
+h1 {
+   font-weight: 1000;
+   font-size: 35pt;
+}
+
+h2 {
+   font-weight: 700;
+   font-size: 20pt;
+   font-weight: 900;
+}
+
+h3 {
+   font-weight: 700;
+   font-size: 16pt;
+   font-style: italic;
+}
+
+main p {
+   font-weight: 400;
+   font-size: 12pt;
+   margin-top: -10px;
+}
+
+#heroImage {
+   height: 350px;
+   width: 100%;
+   background-image: url(images/mountain.jpg);
+   background-attachment: fixed;
+   background-size: 100%;
+   background-position: bottom;
+   background-repeat: no-repeat;
+}
+
+#weatherSummary {
+   float: left;
+   color: #f1f1f1;
+   background-color: rgb(0, 45, 140, 0.6);
+   margin: 15px 20px;
+   padding: 10px;
+   max-width: 300px;
+   max-height: 330px;
+}
+#fiveDay {
+   margin-top: 20px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+}
+
+#fiveDay ul {
+   list-style: none;
+   text-align: center;
+   overflow: hidden;
+
+   background: rgb(0, 45, 140);
+   background: linear-gradient(
+      180deg,
+      rgba(0, 45, 140, 1) 0%,
+      rgb(6, 73, 219) 100%
+   );
+}
+
+#fiveDay ul li {
+   padding: 14px 80px;
+   display: inline-block;
+   color: #f1f1f1;
+}
+
+#fiveDay li img {
+   font-size: 15pt;
+   transition: 0.5s;
+}
+
+#fiveDay li img:hover:not(.active) {
+   width: 55px;
+   transition: 0.5s;
+   background-color: rgb(0, 45, 140);
+}
+
+#article {
+   grid-template-columns: 1fr 1fr;
+   padding: 14px 20px;
+   background-color: #dfdfdf;
+   overflow: hidden;
+}
+
+#articleImg {
+   float: right;
+   margin: 10px;
+}
+
+#gallery {
+   margin-top: 20px;
+}
+
+.slider {
+   text-align: center;
+   overflow: hidden;
+}
+
+.slides {
+   display: flex;
+   overflow-x: auto;
+}
+
+.slides::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+   background: black;
+   border-radius: 10px;
+}
+#gallery img {
+   top: 0;
+   left: 50px;
+   right: 0;
+   max-height: 800px;
+}
+
+.slider > a {
+   display: inline-flex;
+   width: 1.5rem;
+   height: 1.5rem;
+   background: white;
+   text-decoration: none;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   margin: 0 0 0.5rem 0;
+   position: relative;
+}
+.slider > a:active {
+   top: 1px;
+}
+.slider > a:focus {
+   background: #000;
+}
+
+
+#footer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   margin: 50px 0px;
+   color: #f1f1f1;
+   background: rgb(0, 45, 140);
+   background: linear-gradient(
+      0deg,
+      rgba(0, 45, 140, 1) 0%,
+      rgba(10, 89, 255, 1) 100%
+   );
+}
+
+#contactImg {
+   margin: auto;
+   grid-column: 2;
+}
+
+#contactInfo {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto 1fr auto;
+   grid-column: 4;
+}
+
+#ci1 {
+   justify-self: start;
+   grid-column: 1 / span 3;
+   grid-row: 1;
+   margin-bottom: -30px;
+}
+
+#ci2 {
+   justify-self: start;
+   margin: 20px;
+   text-align: left;
+   grid-column: 1 / span 3;
+   grid-row: 2;
+   width: 160px;
+   margin-bottom: -10px;
+}
+
+#ci3 {
+   justify-self: start;
+   display: flex;
+   grid-column: 1 / span 3;
+   grid-row: 3;
+   margin-bottom: 10px;
+   gap: 15px;
+}
+
+#lastupdated {
+   display: inline;
+}
+
+footer {
+   font-family: "Archivo Narrow", sans-serif;
+   margin: 0 auto;
+   text-align: center;
+   color: #ebebff;
+   background-color: rgb(0, 45, 140);
+   padding-bottom: 5px;
+}
+
+footer a {
+   color: #ebebff;
+}
+
+.collapsible {
+   position: fixed;
+   visibility: collapse;
+}
+
+@media only screen and (max-width: 1280px) {
+   #fiveDay ul li {
+      padding: 14px 50px;
+   }
+}
+
+@media only screen and (max-width: 730px) {
+   .collapsible {
+      position: initial;
+      visibility: visible;
+      background-color: rgb(0, 45, 140);
+      color: #ebebff;
+      padding: 14.5px;
+      width: 100%;
+      border: none;
+      text-align: left;
+   }
+
+   nav li {
+      float: none;
+   }
+   .collapsible:hover {
+      background-color: rgb(0, 45, 140);
+   }
+
+   .content {
+      padding: 0 0px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+   }
+}
