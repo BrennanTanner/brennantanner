@@ -1,15 +1,9 @@
-/* #gallery {
-display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
-} */
 img {
     width:100%;
 }
 #gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(5, 1fr); */
     grid-gap: 15px;
 }
 .img1{
@@ -37,22 +31,18 @@ img {
     grid-column: 2;
 }
 .img6{
-    /* grid-area: img-6; */
     grid-column: 1;
     grid-row: 5;
 }
 .img7{
-    /* grid-area: img-7; */
     grid-column: 1;
     grid-row: 4;
 }
 .img8{
-    /* grid-area: img-8; */
     grid-column: 2;
     grid-row: 3;
 }
 .img9{
-    /* grid-area: img-9; */
     grid-column: 3;
     grid-row:3 / span 4;
 }
