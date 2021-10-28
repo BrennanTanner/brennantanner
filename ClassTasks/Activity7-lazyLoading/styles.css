@@ -61,14 +61,13 @@ img {
 picture img[data-src] {
     filter: blur(0.2em);
     transform: none;
-    width: initial;
 }
 
 picture img {
     filter: blur(0em);
     transform: rotate(360deg);
     transition: all 1.5s;
-    width: none;
+
 }
 
 @media screen and (max-width:768px) {
