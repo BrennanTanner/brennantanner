@@ -339,6 +339,10 @@ picture img {
       display: grid;
       grid-template-columns: 1fr 1fr;
    }
+
+   picture img {
+      box-shadow: 0px 0px 0px 0px;
+   }
 }
 
 @media only screen and (max-width: 730px) {
