@@ -1,31 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto&display=swap");
 
 body {
-  background: rgb(15, 170, 245);
+  /* background: rgb(15, 170, 245);
   background: linear-gradient(
     0deg,
     rgba(15, 170, 245, 1) 0%,
     rgba(103, 13, 113, 1) 30%,
     rgba(2, 0, 36, 1) 100%
-  );
+  ); */  
+  background-image: url(images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
 }
-
-.space {
-  background: rgba(255, 255, 255, 0) center / 200px 200px round;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-
 
 header {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   display: flex;
-  color: #ebebff;
+  color: #343434;
+  background-color: #ffffff80;
+  border-radius: 15px 15px 0px 0px;
   padding: 30px 100px;
 }
 
@@ -51,7 +46,7 @@ nav ul {
   margin: -10px;
   padding: 0px;
   overflow: hidden;
-  background-color: rgba(0, 23, 71, 0.8);
+  background-color: rgba(0, 71, 15, 0.8);
 }
 
 nav li {
@@ -60,7 +55,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: #ebebff;
+  color: #edffeb;
   text-align: center;
   font-size: 15pt;
   transition: 0.5s;
@@ -75,35 +70,53 @@ nav li a:hover:not(.active) {
 }
 
 #intro {
-  border-radius: 15px;
+  border-radius: 30px;
   margin: 100px 20px;
   padding: 20px;
   padding-bottom: 160px;
-  background-color: #f1f1f1;
+  color: #f1f1f1;
+  background-color:rgba(0, 71, 15);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 #research {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
   background-color: #f1f1f1;
+  background-image: url(images/board2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 #usability {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
   background-color: #f1f1f1;
+  background-image: url(images/board2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 #final {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
   background-color: #f1f1f1;
+  background-image: url(images/board2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 #conclusion {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-image: url(images/board2.jpg);
+  background-size: cover;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 
 #conclusion p {
@@ -115,7 +128,7 @@ nav li a:hover:not(.active) {
   top: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  background-color: #f1f1f1;
+  background-color: #343434;
   padding: 10px 20px;
 }
 
@@ -140,7 +153,7 @@ nav li a:hover:not(.active) {
 #figma li a:hover:not(.active) {
   font-size: 18pt;
   background-color: rgba(0, 23, 71, 0.8);
-  color: #ebebff;
+  color: #343434;
   transition: 0.5s;
 }
 
@@ -200,9 +213,14 @@ main p {
   margin: 100px -50%;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+  background-image: url(images/board2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5em;
 }
-#imgBar #steps li div {
-  border-radius: 50px;
+
+#imgBar li div {
+  border-radius: 10px;
   padding: 0px 25px;
 }
 
@@ -210,19 +228,21 @@ main p {
   list-style: none;
   text-align: center;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(0, 23, 71, 0.8);
+
 }
 
 #imgBar ul li {
-  padding: 14px 20px;
+  padding: 30px 30px;
   display: inline-block;
+  
 }
 
 #imgBar li img {
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 #imgBar li div {
@@ -234,41 +254,77 @@ main p {
   visibility: hidden;
   -webkit-transition:  visibility 0s, opacity 0.3s linear;
   transition: visibility 0s, opacity 0.3s linear;
+  height: 417px;
+  overflow: auto;
 }
 
 #imgBar li:hover div {
-  width: 251px;
-  height: 593px;
+  width: 170px;
   padding: 8px 15px;
   text-align: left;
   visibility: visible;
-  opacity: 0.8;
+  border-radius: 10px;
+  opacity: 0.9;
 }
+
 #imgBar li div:not(:hover) {
-  width: 251px;
-  height: 593px;
+  width: 170px;
   padding: 8px 15px;
   text-align: left;
   opacity: 0;
+  border-radius: 10px;
   visibility: visible;
   -webkit-transition:  visibility 0s, opacity 0.3s linear;
   transition: visibility 0s, opacity 0.3s linear;
 }
 
 #imgBar li:hover #small {
-  height: 484px;
+  height: 340px;
 }
 
 #imgBar li #small:not(:hover) {
-  height: 484px;
+  height: 340px;
+}
+
+#imgBar #steps li div {
+  border-radius: 35px;
+  padding: 0px 25px;
+  margin-left: 5px;
 }
 
 #steps li div:not(:hover) {
-  width: 228px;
+  width: 140px;
+  height: 430px;
 }
 
 #steps li:hover div {
-  width: 228px;
+  width: 140px;
+  height: 430px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+::-webkit-scrollbar-button {
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+
 }
 
 #footer {
