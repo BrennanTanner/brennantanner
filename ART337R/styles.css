@@ -1,25 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto&display=swap");
 
 body {
-  /* background: rgb(15, 170, 245);
-  background: linear-gradient(
-    0deg,
-    rgba(15, 170, 245, 1) 0%,
-    rgba(103, 13, 113, 1) 30%,
-    rgba(2, 0, 36, 1) 100%
-  ); */  
   background-image: url(images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
+  background-position: right; 
 }
 
 header {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   display: flex;
-  color: #343434;
-  background-color: #ffffff80;
+  color: #293241;
   border-radius: 15px 15px 0px 0px;
   padding: 30px 100px;
 }
@@ -32,7 +24,11 @@ header {
   margin: 20px 0px 0px -10px;
 }
 
-nav {
+html {
+scroll-behavior: smooth;
+}
+
+ nav {
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -46,7 +42,8 @@ nav ul {
   margin: -10px;
   padding: 0px;
   overflow: hidden;
-  background-color: rgba(0, 71, 15, 0.8);
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
 }
 
 nav li {
@@ -55,7 +52,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: #edffeb;
+  color: #293241;
   text-align: center;
   font-size: 15pt;
   transition: 0.5s;
@@ -67,6 +64,14 @@ nav li a {
 nav li a:hover:not(.active) {
   font-size: 18pt;
   transition: 0.5s;
+} 
+nav .container ul li.active {
+background-color: #ee6c4d;
+
+transition: 0.3s;
+}
+nav .container ul li.active a {
+color: #ffffff;
 }
 
 #intro {
@@ -74,8 +79,9 @@ nav li a:hover:not(.active) {
   margin: 100px 20px;
   padding: 20px;
   padding-bottom: 160px;
-  color: #f1f1f1;
-  background-color:rgba(0, 71, 15);
+  color: #293241;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);
   background-size: cover;
   background-position: center;
   box-shadow: 5px 10px 8px 10px #00000070;
@@ -84,38 +90,36 @@ nav li a:hover:not(.active) {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
-  background-color: #f1f1f1;
-  background-image: url(images/board2.jpg);
-  background-size: cover;
-  background-position: center;
+  color: #293241;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
   box-shadow: 5px 10px 8px 10px #00000070;
 }
 #usability {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
-  background-color: #f1f1f1;
-  background-image: url(images/board2.jpg);
-  background-size: cover;
-  background-position: center;
+  color: #293241;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
   box-shadow: 5px 10px 8px 10px #00000070;
 }
 #final {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
-  background-color: #f1f1f1;
-  background-image: url(images/board2.jpg);
-  background-size: cover;
-  background-position: center;
+  color: #293241;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
   box-shadow: 5px 10px 8px 10px #00000070;
 }
 #conclusion {
   border-radius: 15px;
   margin: 100px 20px;
   padding: 20px;
-  background-image: url(images/board2.jpg);
-  background-size: cover;
+  color: #293241;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
   box-shadow: 5px 10px 8px 10px #00000070;
 }
 
@@ -128,7 +132,10 @@ nav li a:hover:not(.active) {
   top: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  background-color: #343434;
+  color: #293241;
+  border-radius: 20px;
+  background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
   padding: 10px 20px;
 }
 
@@ -411,7 +418,8 @@ footer a {
   .collapsible {
     position: initial;
     visibility: visible;
-    background-color:  rgba(0, 23, 71, 0.8);
+    background: rgb(152,193,217);
+  background: linear-gradient(180deg, rgba(152,193,217,1) 50%, rgba(224,251,252,1) 100%);;
     color: #ebebff;
     padding: 14.5px;
     width: 100%;
@@ -423,7 +431,7 @@ footer a {
     float: none;
   }
 
-  .content {
+  .container {
     padding: 0 0px;
     max-height: 0;
     overflow: hidden;

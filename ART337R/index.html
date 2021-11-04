@@ -20,7 +20,7 @@
       <button class="collapsible">
         <img src="images/menu.svg" alt="menu" width="50px" height="50px" />
       </button>
-      <div class="content">
+      <div class="container">
         <ul>
           <li>
             <img
@@ -31,22 +31,22 @@
               width="50px"
             />
           </li>
-          <li>
+          <li class="intro active">
             <a href="#intro"> Intro </a>
           </li>
-          <li>
+          <li class="research">
             <a href="#research"> Initial Research </a>
           </li>
-          <li>
+          <li class="usability">
             <a href="#usability"> Rounds of Usability </a>
           </li>
-          <li>
+          <li class="final">
             <a href="#final"> Final Product </a>
           </li>
-          <li>
+          <li class="conclusion">
             <a href="#conclusion"> Conclusion </a>
           </li>
-          <li>
+          <li class="figma">
             <a href="#figma">Figma </a>
           </li>
         </ul>
@@ -54,7 +54,8 @@
     </nav>
 
     <main>
-      <div id="intro">
+      <section id="intro">
+        
         <h2>Introduction</h2>
 
         <h4>The Problem</h4>
@@ -86,8 +87,8 @@
           </li>
         </ol>
         
-      </div>
-      <div id="research">
+      </section>
+      <section id="research">
         <h2>Initial Research</h2>
         <p>
           I started research by looking into different recipe apps, I found many
@@ -100,9 +101,9 @@
           draft on some note cards.
         </p>
         <img id="notes" src="images/notes.JPG" alt="display example1" />
-      </div>
+      </section>
 
-      <div id="usability">
+      <section id="usability">
         <h2>Rounds of Usibility Testing</h2>
         <h3>Scenarios</h3>
         <p>
@@ -124,7 +125,7 @@
           edit the orange chicken salad recipe so that you add double the
           chicken.
         </p>
-      </div>
+      </section>
       <div id="imgBar">
         <ul>
           <li>
@@ -232,15 +233,20 @@
         </ul>
       </div>
 
-      <div id="final">
+      <section id="final">
         <h2>Final Product</h2>
+        <h4>Color Scheme</h4>
+        
+        <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="07574562178923301">new CoolorsPaletteWidget("07574562178923301", ["3d5a80","98c1d9","e0fbfc","ee6c4d","293241"]); </script>
         <h4>Step by Step Process</h4>
         <p>
           Here I will show you what using the app looks like. This is a
           simplified version of the user testing version. You can find the
           complete Figma view further below.
         </p>
-      </div>
+      </section>
       <div id="imgBar">
         <div id="steps">
           <ul>
@@ -323,14 +329,14 @@
           </ul>
         </div>
       </div>
-      <div id="conclusion">
+      <section id="conclusion">
         <h2>Conclusion</h2>
         <img id ="example2" src="images/example2.png" alt="Example 2">
         <p>
           This project was an excellent intro to UX design. I came into this project thinking that user interface was equal to user experience. I learned that just because an interface looks good does not mean that it will make a good experience for the user. It was fairly tricky to make something that was both pleasant to the eye and easy to navigate. I still have much to learn but after this study I am in a better position than I started in. I learned the importance of each step along the way. Every time I tried to skip one it only gave me more work to do in the long run. I learned the value of everyday conventions, like I used in my icons and images. I also began to see the world through a different lens. I see products and appliances not for how they simply look, but also how they are used. Everyday objects will become puzzles to me, and I will think “how would I change this?”, “how could I make this better?”
         </p>
-      </div>
-      <div id="figma">
+      </section>
+      <section id="figma">
         <h2>Figma Links</h2>
         <ul>
           <li>
@@ -346,7 +352,7 @@
         <a href="https://www.figma.com/file/sEBJUnCH7V0lf7sWbkasAQ/Recipe-Calulator?node-id=76%3A2194">Final Iteration</a>
       </li>
         </ul>
-      </div>
+      </section>
     </main>
     <footer>
       <div id="footer">

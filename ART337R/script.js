@@ -15,3 +15,21 @@ for (i = 0; i < coll.length; i++) {
 //I got my collapsible menu from the W3 website. I copy and pasted and made minor adjustments myself. https://www.w3schools.com/howto/howto_js_collapsible.asp
 
 
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
