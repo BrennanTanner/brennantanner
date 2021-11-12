@@ -4,7 +4,7 @@ body {
   background-image: url(images/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right; 
+  background-size: cover;
 }
 
 header {
@@ -221,8 +221,9 @@ main p {
   font-weight: 900;
   background-image: url(images/board2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   border-radius: 5em;
+  box-shadow: 5px 10px 8px 10px #00000070;
 }
 
 #imgBar li div {
