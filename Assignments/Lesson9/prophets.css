@@ -12,6 +12,7 @@ html{
 h1{
    font-size: 40pt
 }
+
 h2 {
    font-size: 30pt;
 }
@@ -22,6 +23,7 @@ section {
     text-align: center;
     box-shadow: 3px 3px 10px 3px #888888;
     background-color: lightcyan;
+    border-radius: 20px;
 }
 
 .cards img {
