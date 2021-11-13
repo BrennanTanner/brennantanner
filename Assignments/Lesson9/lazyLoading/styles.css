@@ -1,0 +1,21 @@
+img {
+    height: 300px;
+    width: 400px;
+}
+#gallery {
+    display: flex;
+    flex-direction: column;
+
+}
+
+picture img[data-src] {
+    filter: blur(.8em);
+    transform: none;
+}
+
+picture img {
+    filter: blur(0em);
+    transition: all 1.5s;
+
+}
+

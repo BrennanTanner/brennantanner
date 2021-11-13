@@ -118,6 +118,22 @@ main p {
    font-size: 12pt;
    margin-top: -10px;
 }
+.cardSection {
+   display: flex;
+}
+.cards6, .cards0, .cards2 {
+    padding: 20px;
+    border: solid #888888;
+    text-align: center;
+    box-shadow: 3px 3px 10px 3px #888888;
+    background-color: lightcyan;
+    border-radius: 20px;
+}
+
+.cards6 img, .cards0 img, .cards2 img {
+   border-radius: 20px;
+   width:100%;
+}
 
 #homeHero {
    height: 350px;
@@ -128,47 +144,6 @@ main p {
    background-position: bottom;
    background-repeat: no-repeat;
 }
-
-#homeSections {
-   display: flex;
-   flex-direction: column;
-}
-
-#homeSections section {
-text-align: center;
-display: grid;
-grid-gap: 10px;
-grid-template-columns: 1fr 1fr;
- background-color: lightcyan;
- margin: 10px;
- padding: 10px;
-border-radius: 20px;
-box-shadow: 4px 8px 10px;
-}
-
-#homeSections section p {
-   margin-top: -40px;
-}
-
-#homeSections section h1 {
-   margin-top: -10px;
-}
-
-#prestonData {
-   grid-column: 2;
-   grid-row: 1;
-}
-#prestonImg {
-   grid-column: 1;
-   
-   height: 100%;
-   width: 100%;
-   background-image: url(images/lightning-large-2079w.jpg);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   border-radius: 15px;}
-
 
 #heroImage {
    height: 150px;
@@ -381,7 +356,24 @@ picture img {
    box-shadow: 10px 10px 15px 0px;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1008px) {
+   .cardSection {
+      display: grid;
+   }
+   .cards6, .cards0, .cards2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .cardsPhoto0{
+      grid-column: 1;
+   }
+
+   .cardData0{
+      grid-column: 2;
+      grid-row: 1;
+   }
+
    #fiveDay ul li {
       padding: 14px 50px;
    }
@@ -396,7 +388,15 @@ picture img {
    }
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 641px) {
+   .cardSection {
+      display: block;
+   }
+   .cards6, .cards0, .cards2 {
+      display: block;
+   }
+
+   
    .collapsible {
       position: initial;
       visibility: visible;
