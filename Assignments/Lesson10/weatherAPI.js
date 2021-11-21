@@ -26,8 +26,11 @@ function cDay(weatherObjct) {
    let cDay = document.createElement("h3");
    cDay.textContent = dofW[dt.getDay()];
 
+   let current = document.createElement("h4");
+   current.textContent = ` ${weatherData.weather[0].description}`;
+
    let cTemp = document.createElement("p");
-   cTemp.textContent = `Current Temprature: ${weatherData.main.temp}° F`;
+   cTemp.textContent = `Temperature: ${weatherData.main.temp}° F`;
 
    let cWeather = document.createElement("img");
    let imagesrc =
@@ -41,19 +44,31 @@ function cDay(weatherObjct) {
    cFeels.textContent = `Feels like: ${weatherData.main.feels_like}° F`;
 
    let tempHigh = document.createElement("p");
-   tempHigh.textContent = `Todays High: ${weatherData.main.temp_max}° F`;
+   tempHigh.textContent = `Today's High: ${weatherData.main.temp_max}° F`;
 
    let tempLow = document.createElement("p");
-   tempLow.textContent = `Todays Low: ${weatherData.main.temp_min}° F`;
+   tempLow.textContent = `Today's Low: ${weatherData.main.temp_min}° F`;
 
+   let humid = document.createElement("p");
+   humid.textContent = `Humidity: ${weatherData.main.humidity}%`;
+
+   let wSpeed = document.createElement("p");
+   wSpeed.textContent = `Wind Speed: ${weatherData.wind.speed} mph`;
+
+   let wChill = document.createElement("p");
+   wChill.textContent = `Wind Chill: ${weatherData.wind.deg}° F`;
    let todayElem = document.querySelector("#today");
 
    todayElem.appendChild(cDay);
+   todayElem.appendChild(current);
    todayElem.appendChild(cWeather);
    todayElem.appendChild(cTemp);
    todayElem.appendChild(cFeels);
    todayElem.appendChild(tempHigh);
    todayElem.appendChild(tempLow);
+   todayElem.appendChild(humid);
+   todayElem.appendChild(wSpeed);
+   todayElem.appendChild(wChill);
 }
 
 fetch(url)

@@ -6,6 +6,11 @@ html {
    background: linear-gradient(180deg, rgba(28,37,51,1) 50%, rgba(42,67,70,1) 85%, rgba(54,94,88,1) 90%, rgba(76,143,120,1) 95%, rgba(116,230,177,1) 100%);
 }
 
+h4 {
+ font-weight: 100;
+ margin-bottom: -7px;
+}
+
 #banner {
    background-color: rgb(253, 221, 76);
    padding: 20px;
