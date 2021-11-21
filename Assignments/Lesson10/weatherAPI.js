@@ -27,7 +27,7 @@ function cDay(weatherObjct) {
    cDay.textContent = dofW[dt.getDay()];
 
    let cTemp = document.createElement("p");
-   cTemp.textContent = `Current Temprature: ${weatherData.main.temp} F`;
+   cTemp.textContent = `Current Temprature: ${weatherData.main.temp}° F`;
 
    let cWeather = document.createElement("img");
    let imagesrc =
@@ -38,13 +38,13 @@ function cDay(weatherObjct) {
    cWeather.setAttribute("alt", weatherData.weather[0].description);
 
    let cFeels = document.createElement("p");
-   cFeels.textContent = `Feels like: ${weatherData.main.feels_like}`;
+   cFeels.textContent = `Feels like: ${weatherData.main.feels_like}° F`;
 
    let tempHigh = document.createElement("p");
-   tempHigh.textContent = `Todays High: ${weatherData.main.temp_max}`;
+   tempHigh.textContent = `Todays High: ${weatherData.main.temp_max}° F`;
 
    let tempLow = document.createElement("p");
-   tempLow.textContent = `Todays Low: ${weatherData.main.temp_min}`;
+   tempLow.textContent = `Todays Low: ${weatherData.main.temp_min}° F`;
 
    let todayElem = document.querySelector("#today");
 
@@ -74,7 +74,10 @@ function fiveDay(fweatherObjct) {
    for (let i = 0; i < size; i++) {
       if (forecast[i].dt_txt.includes("18:00:00")) {
          let highTempElem = document.createElement("p");
-         highTempElem.textContent = `High Temp: ${forecast[i].main.temp_max}`;
+         highTempElem.textContent = `High: ${forecast[i].main.temp_max}° F`;
+
+         let lowTempElem = document.createElement("p");
+         lowTempElem.textContent = `Low: ${forecast[i].main.temp_min}° F`;
 
          let fiveWeather = document.createElement("img");
          let imagesrc =
@@ -90,6 +93,7 @@ function fiveDay(fweatherObjct) {
 
          fiveDayList[i2].appendChild(dayElem);
          fiveDayList[i2].appendChild(highTempElem);
+         fiveDayList[i2].appendChild(lowTempElem);
          fiveDayList[i2].appendChild(fiveWeather);
 
          i2++;
