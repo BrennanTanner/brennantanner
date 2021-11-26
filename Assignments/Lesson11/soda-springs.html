@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Weather News Happens</title>
+   </head>
+   <body>
+      <header>
+         <img src="images/logo.svg" alt="logo" height="200px" width="200px" />
+         <div id="title">
+            <h1>Weather News Happens</h1>
+            <h2>Weather you want it or not</h2>
+         </div>
+      </header>
+
+      <nav>
+         <button class="collapsible">
+            <img src="images/menu-01.svg" alt="menu" width="50px" height="50px" />
+         </button>
+         <div class="content">
+            <ul>
+               <li>
+                  <a href="index.html"> home </a>
+               </li>
+               <li>
+                  <a href="preston.html"> Preston </a>
+               </li>
+               <li>
+                  <a href="soda-springs.html" class ="active"> Soda Springs </a>
+               </li>
+               <li>
+                  <a href="fish-haven.html"> Fish Haven </a>
+               </li>
+               <li>
+                  <a href="storm-center.html"> Storm Center </a>
+               </li>
+               <li>
+                  <a href="gallery.html"> Gallery </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <main>
+         <section id="intro"><div><h1 id="pageTitle">Soda Springs</h1></div><div id="events"><h2>Upcoming Events</h2> </div></section>
+         
+         
+         <div id="heroImageSS">
+            <div id="weatherSummary">
+               <div id="today"></div>
+            </div>
+         </div>
+         <br />
+         <div id="fiveDay">
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+         </div>
+         <br /><br />
+         <div id="article">
+            
+             
+<div>  <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+               <h4>By Deseret News</h4><br><br>
+                   <p>SODA SPRINGS, Idaho — It was a pit stop for Oregon Trail pioneers and fur traders while traveling through Eastern Idaho. Often referred to as the 'Oregon Trail Oasis,' it's now known as Soda Springs, a town of just over 3,000 people in Caribou County.<br><br>
+
+As one of the main water sites along the Oregon Trail, travelers would often stop to try the water at the sulfurous springs, which bubbles like boiling water on the surface and emits a destructive, rotten egg smell when the wind is blowing just right.<br><br>
+
+Fur traders first referred to the area as 'Beer Springs' after tasting the water and reportedly said that one of the springs "tasted like beer... flat beer."<br><br>
+
+Today, Beer Springs is now known as Hooper Springs, named after W.H. Hooper, Salt Lake City's leading banker at the time, and the Utah delegate to Congress.
+               </p></div>               <div>
+              
+                  <img
+                     id="articleImg"
+                     src="images/soda-springs-article.jpg"
+                     alt="day of the week"
+                  /></div>
+            </div>
+         </div>
+         <div id="galleryHome">
+            <div class="slider">
+               <a href="#slide-1">1</a>
+               <a href="#slide-2">2</a>
+               <a href="#slide-3">3</a>
+               <a href="#slide-4">4</a>
+
+               <div class="slides">
+                  <div id="slide-1">
+                     <img
+                        srcset="
+                           images/soda-spring-img1.jpg  1040w,
+                           images/soda-spring-img1.jpg   640w,
+                           images/soda-spring-img1.jpg     320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                    100vw"
+                        src="images/soda-spring-img1.jpg"
+                        alt="soda springs image 1"
+                     />
+                  </div>
+                  <div id="slide-2">
+                     <img
+                        srcset="
+                           images/soda-spring-img2.jpg   1040w,
+                           images/soda-spring-img2.jpg 640w,
+                           images/soda-spring-img2.jpg    320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                    100vw"
+                        src="images/soda-spring-img2.jpg"
+                        alt="soda springs image 2"
+                     />
+                  </div>
+                  <div id="slide-3">
+                     <img
+                        srcset="
+                           images/soda-spring-img3.jpg  1040w,
+                           images/soda-spring-img3.jpg  640w,
+                           images/soda-spring-img3.jpg   320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                     100vw"
+                        src="images/soda-spring-img3.jpg"
+                        alt="soda springs image 3"
+                     />
+                  </div>
+                  <div id="slide-4">
+                     <img
+                        srcset="
+                           images/soda-spring-img4.jpg  1040w,
+                           images/soda-spring-img4.jpg  640w,
+                           images/soda-spring-img4.jpg    320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                     100vw"
+                        src="images/soda-spring-img4.jpg"
+                        alt="soda springs image 4"
+                     />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div id="footer">
+            <section id="contactImg">
+               <img id="map"
+                  src="images/sodasprings.png"
+                  alt="map"
+               />
+            </section>
+            <section id="contactInfo">
+               <h2 id="ci1">Contact Information</h2>
+               <section id="ci2">
+                  <table>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/pin-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td><h3>Soda Springs, Idaho 83276</h3></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/phone-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>(123)-456-7890</h3>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/mail-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>mail@weather.com</h3>
+                        </td>
+                     </tr>
+                  </table>
+               </section>
+               <section id="ci3">
+                  <img src="images/twitter.png" height="50px" width="50px" />
+                  <img src="images/youtube.png" height="50px" width="50px" />
+                  <img src="images/facebook.png" height="50px" width="50px" />
+               </section>
+            </section>
+         </div>
+         <p>
+            © 2021 | Brennan L. Tanner | The Weather Site |
+            <a href="https://byui.edu/online">BYUI Online Learning</a>
+         </p>
+         <p>
+            <span id="lastupdated"></span>
+         </p>
+      </footer>
+      <script src="../../lastupdated.js"></script>
+      <script src="weatherAPI-SS.js"></script>
+      <script src="events.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

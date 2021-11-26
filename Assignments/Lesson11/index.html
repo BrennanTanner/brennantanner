@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Weather News Happens</title>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   </head>
+   <body>
+      <header>
+         <img src="images/logo.svg" alt="logo" height="200px" width="200px" />
+         <div id="title">
+            <h1>Weather News Happens</h1>
+            <h2>Weather you want it or not</h2>
+         </div>
+      </header>
+      <nav>
+         <button class="collapsible">
+            <img src="images/menu-01.svg" alt="menu" width="50px" height="50px" />
+         </button>
+         <div class="content">
+            <ul>
+               <li>
+                  <a href="index.html" class="active"> home </a>
+               </li>
+               <li>
+                  <a href="preston.html"> Preston </a>
+               </li>
+               <li>
+                  <a href="soda-springs.html"> Soda Springs </a>
+               </li>
+               <li>
+                  <a href="fish-haven.html"> Fish Haven </a>
+               </li>
+               <li>
+                  <a href="storm-center.html"> Storm Center </a>
+               </li>
+               <li>
+                  <a href="gallery.html"> Gallery </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <main>
+         <h1>Home</h1>
+         <div id="homeHero">
+            <div id="weatherSummary">
+               <h2>Welcome to the Weather News Happens website</h2>
+               <p>Prepare to recieve your daily dose of meteorological information 🤖</p>
+            </div>
+         </div>
+
+         <div class="cardSection"></div>
+      </main>
+      <footer>
+         <div id="footer">
+            <section id="contactImg">
+               <img id="map" src="images/homemap.png" alt="map" />
+            </section>
+            <section id="contactInfo">
+               <h2 id="ci1">Contact Information</h2>
+               <section id="ci2">
+                  <table>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/pin-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td><h3>South Eastern Idaho</h3></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/phone-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>(123)-456-7890</h3>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/mail-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>mail@weather.com</h3>
+                        </td>
+                     </tr>
+                  </table>
+               </section>
+               <section id="ci3">
+                  <img src="images/twitter.png" height="50px" width="50px" />
+                  <img src="images/youtube.png" height="50px" width="50px" />
+                  <img src="images/facebook.png" height="50px" width="50px" />
+               </section>
+            </section>
+         </div>
+         <p>
+            © 2021 | Brennan L. Tanner | The Weather Site |
+            <a href="https://byui.edu/online">BYUI Online Learning</a>
+         </p>
+         <p>
+            <span id="lastupdated"></span>
+         </p>
+      </footer>
+      <script src="../../lastupdated.js"></script>
+      <script src="script.js"></script>
+      <script src="towns.js"></script>
+   </body>
+</html>

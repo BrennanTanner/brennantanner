@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Weather News Happens</title>
+   </head>
+   <body>
+      <header>
+         <img src="images/logo.svg" alt="logo" height="200px" width="200px" />
+         <div id="title">
+            <h1>Weather News Happens</h1>
+            <h2>Weather you want it or not</h2>
+         </div>
+      </header>
+
+      <nav>
+         <button class="collapsible">
+            <img src="images/menu-01.svg" alt="menu" width="50px" height="50px" />
+         </button>
+         <div class="content">
+            <ul>
+               <li>
+                  <a href="index.html"> home </a>
+               </li>
+               <li>
+                  <a href="preston.html"> Preston </a>
+               </li>
+               <li>
+                  <a href="soda-springs.html"> Soda Springs </a>
+               </li>
+               <li>
+                  <a href="fish-haven.html" class="active"> Fish Haven </a>
+               </li>
+               <li>
+                  <a href="storm-center.html"> Storm Center </a>
+               </li>
+               <li>
+                  <a href="gallery.html"> Gallery </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <main>
+         <section id="intro"><div><h1 id="pageTitle">Fish Haven</h1></div><div id="events"><h2>Upcoming Events</h2></div></section>
+         <div id="heroImageFH">
+            <div id="weatherSummary">
+               <div id="today"></div>
+            </div>
+         </div>
+         <br />
+         <div id="fiveDay">
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+            <div class="day"></div>
+         </div>
+         <br /><br />
+         <div id="article">
+            
+
+            <div>
+               <p>
+                  <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+            <h4>By Deseret News</h4><br /><br />
+                  FISH HAVEN, Idaho — It's an undiscovered paradise. Most people
+                  who drive by recognize the raw beauty of a place ringed by
+                  high desert mountains and bordered by the shores of a vast
+                  natural lake.<br /><br />
+
+                  In winter the hills outside this small paradise echo with the
+                  sharp whine of snow machines and in the summer thousands of
+                  tourists ply the lake's bright blue waters with water skis or
+                  fishing poles.<br /><br />
+                  But they don't live there. It's different living in Fish
+                  Haven.<br /><br />
+
+                  The little town sits just on the Idaho side of U.S. Highway 89
+                  tucked in between Bear Lake's west side and the mountains.<br /><br />
+
+                  It's not technically a city or a town, it's really nothing
+                  more than the proverbial wide spot in the road. But people
+                  call it a town even though there isn't a city council, just
+                  the Bear Lake County Commission that oversees development
+                  there.<br /><br />
+
+                  Only 50 to 100 people call it home, depending on the
+                  weather.<br /><br />
+               </p>
+            </div>
+            <div>
+               <img
+                  id="articleImg"
+                  src="images/fish-haven-article.jpg"
+                  alt="day of the week"
+               />
+            </div>
+         </div>
+         <div id="galleryHome">
+            <div class="slider">
+               <a href="#slide-1">1</a>
+               <a href="#slide-2">2</a>
+               <a href="#slide-3">3</a>
+               <a href="#slide-4">4</a>
+
+               <div class="slides">
+                  <div id="slide-1">
+                     <img
+                        srcset="
+                           images/fish-haven-img1.jpg 1040w,
+                           images/fish-haven-img1.jpg  640w,
+                           images/fish-haven-img1.jpg  320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                    100vw"
+                        src="images/fish-haven-img1.jpg"
+                        alt="fish haven image 1"
+                     />
+                  </div>
+                  <div id="slide-2">
+                     <img
+                        srcset="
+                           images/fish-haven-img2.jpg 1040w,
+                           images/fish-haven-img2.jpg  640w,
+                           images/fish-haven-img2.jpg  320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                    100vw"
+                        src="images/fish-haven-img2.jpg"
+                        alt="fish haven image 2"
+                     />
+                  </div>
+                  <div id="slide-3">
+                     <img
+                        srcset="
+                           images/fish-haven-img3.jpg 1040w,
+                           images/fish-haven-img3.jpg  640w,
+                           images/fish-haven-img3.jpg  320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                     100vw"
+                        src="images/fish-haven-img3.jpg"
+                        alt="fish haven image 3"
+                     />
+                  </div>
+                  <div id="slide-4">
+                     <img
+                        srcset="
+                           images/fish-haven-img4.jpg 1040w,
+                           images/fish-haven-img4.jpg  640w,
+                           images/fish-haven-img4.jpg  320w
+                        "
+                        sizes="(min-width: 32em) 33.3vw,
+                     100vw"
+                        src="images/fish-haven-img4.jpg"
+                        alt="fish haven image 4"
+                     />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div id="footer">
+            <section id="contactImg">
+               <img id="map" src="images/fishhaven.png" alt="map" />
+            </section>
+            <section id="contactInfo">
+               <h2 id="ci1">Contact Information</h2>
+               <section id="ci2">
+                  <table>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/pin-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td><h3>Fish Haven, Idaho 83287</h3></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/phone-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>(123)-456-7890</h3>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img
+                              src="images/mail-01.svg"
+                              height="30px"
+                              width="30px"
+                           />
+                        </td>
+                        <td>
+                           <h3>mail@weather.com</h3>
+                        </td>
+                     </tr>
+                  </table>
+               </section>
+               <section id="ci3">
+                  <img src="images/twitter.png" height="50px" width="50px" />
+                  <img src="images/youtube.png" height="50px" width="50px" />
+                  <img src="images/facebook.png" height="50px" width="50px" />
+               </section>
+            </section>
+         </div>
+         <p>
+            © 2021 | Brennan L. Tanner | The Weather Site |
+            <a href="https://byui.edu/online">BYUI Online Learning</a>
+         </p>
+         <p>
+            <span id="lastupdated"></span>
+         </p>
+      </footer>
+      <script src="../../lastupdated.js"></script>
+      <script src="weatherAPI-FH.js"></script>
+      <script src="events.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
