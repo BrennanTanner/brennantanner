@@ -26,6 +26,7 @@ h1 {
 h2 {
    font-family: urbane-rounded, sans-serif;
    font-weight: 600;
+   font-size: 18pt;
    font-style: normal;
 }
 
@@ -145,9 +146,13 @@ a {
    border-radius: 10px;
 }
 
-#latest {
+#latest, #exm {
    display: flex;
    overflow-x: auto;
+}
+
+#exm img {
+   height: 300px;
 }
 
 #latest::-webkit-scrollbar {
@@ -180,6 +185,14 @@ a {
 
 #seasonImg {
    width: 100px;
+}
+
+#details {
+   display: flex;
+   text-align: left;
+}
+#details img{
+margin: 20px;
 }
 @media screen and (max-width: 600px) {
    .topnav .search-container {
