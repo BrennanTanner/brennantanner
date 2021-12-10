@@ -41,7 +41,7 @@ fetch(requestURL)
                const epNum = jsonObject["number_of_episodes"];
                const epLength = jsonObject["episode_run_time"];
 
-               console.log(epLength);
+
                var num = epNum*epLength[0];
                var hours = num / 60;
                var rhours = Math.floor(hours);
@@ -53,7 +53,7 @@ fetch(requestURL)
                }
                else {
                wt.textContent =
-                  "Total watch time: " + rhours +
+                  rhours +
                   " hours and " +
                   rminutes +
                   " minutes";}
@@ -98,13 +98,52 @@ fetch(requestURL3)
       const results = jsonObject["results"];
 
       for (let i = 0; i < shows; i++) {
-      let card = document.createElement("section");
+         let card = document.createElement("div");
+         let cardBottom = document.createElement("section");
+         let cardTop = document.createElement("section");
       let link = document.createElement("a");
       let title = document.createElement("h2");
       let info = document.createElement("p");
+      let wt = document.createElement("p");
       let image = document.createElement("img");
 
+      const requestURL2 =
+            "https://api.themoviedb.org/3/tv/" +
+            results[i].id +
+            "?api_key=8f1e70e82efeefd9c20bf8c8ffeaee9b&language=en-US";
+
+         fetch(requestURL2)
+            .then(function (response) {
+               return response.json();
+            })
+            .then(function (jsonObject) {
+               console.table(jsonObject); // temporary checking for valid response and data parsing
+               const epNum = jsonObject["number_of_episodes"];
+               const epLength = jsonObject["episode_run_time"];
+
+               console.log(epLength);
+               var num = epNum*epLength[0];
+               var hours = num / 60;
+               var rhours = Math.floor(hours);
+               var minutes = (hours - rhours) * 60;
+               var rminutes = Math.round(minutes);
+
+               if(epLength.length == 0) {
+                  wt.textContent = "Insufficient Data";
+               }
+               else {
+               wt.textContent =
+                  rhours +
+                  " hours and " +
+                  rminutes +
+                  " minutes";}
+               card.appendChild(wt);
+            });
+
          //add data to elements
+         if (results[i].name.length >= 30){
+            results[i].name = results[i].name.substring(0, 27) + "...";
+          }
          title.textContent = results[i].name;
          info.textContent = "First Aired: " + results[i].first_air_date;
 
@@ -118,12 +157,14 @@ fetch(requestURL3)
 
          image.src = imageurl;
          link.href = "show.html?id=" + results[i].id;
+         cardTop.id = "cardTop";
 
          //append card
          card.appendChild(link);
-         link.appendChild(title);
-         link.appendChild(info);
-         link.appendChild(image);
+         link.appendChild(cardTop);
+         link.appendChild(cardBottom);
+         cardTop.appendChild(title);
+         cardBottom.appendChild(image);
 
          document.getElementById("popular").appendChild(card);
       }
@@ -142,13 +183,56 @@ fetch(requestURL3)
          const results = jsonObject["results"];
    
          for (let i = 0; i < shows; i++) {
-         let card = document.createElement("section");
+         let card = document.createElement("div");
+         let cardBottom = document.createElement("section");
+         let cardTop = document.createElement("section");
          let link = document.createElement("a");
          let title = document.createElement("h2");
          let info = document.createElement("p");
+         let wt = document.createElement("p");
          let image = document.createElement("img");
+
+         const requestURL2 =
+         "https://api.themoviedb.org/3/tv/" +
+         results[i].id +
+         "?api_key=8f1e70e82efeefd9c20bf8c8ffeaee9b&language=en-US";
+
+      fetch(requestURL2)
+         .then(function (response) {
+            return response.json();
+         })
+         .then(function (jsonObject) {
+            console.table(jsonObject); // temporary checking for valid response and data parsing
+            const epNum = jsonObject["number_of_episodes"];
+            const epLength = jsonObject["episode_run_time"];
+
+            console.log(epLength);
+            var num = epNum*epLength[0];
+            var hours = num / 60;
+            var rhours = Math.floor(hours);
+            var minutes = (hours - rhours) * 60;
+            var rminutes = Math.round(minutes);
+
+            if(epLength.length == 0) {
+               wt.textContent = "Insufficient Data";
+            }
+            else {
+            wt.textContent =
+               rhours +
+               " hours and " +
+               rminutes +
+               " minutes";}
+            cardBottom.appendChild(wt);
+         });
    
             //add data to elements
+            
+            
+            // title.id = "item" + i;
+            // console.log(results[i].id);
+             if (results[i].name.length >= 30){
+               results[i].name = results[i].name.substring(0, 27) + "...";
+             }
             title.textContent = results[i].name;
             info.textContent = "First Aired: " + results[i].first_air_date;
    
@@ -159,15 +243,18 @@ fetch(requestURL3)
                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" +
                results[i].poster_path;}
    
-   
+               
+
             image.src = imageurl;
             link.href = "show.html?id=" + results[i].id;
+            cardTop.id = "cardTop";
 
             //append card
             card.appendChild(link);
-            link.appendChild(title);
-            link.appendChild(info);
-            link.appendChild(image);
+            link.appendChild(cardTop);
+            link.appendChild(cardBottom);
+            cardTop.appendChild(title);
+            cardBottom.appendChild(image);
    
             document.getElementById("latest").appendChild(card);
          }
