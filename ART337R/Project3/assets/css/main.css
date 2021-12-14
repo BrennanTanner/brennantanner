@@ -3007,6 +3007,39 @@ input, select, textarea {
 
 		}
 
+		/* directions*/
+		#directions{
+			
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		#direction1{
+			text-align: center;
+			margin: 10px;
+			background-color: #ffb800;
+		}
+		#direction1 h3{
+			color: #ffffff !important;
+		}
+		#direction2{
+			text-align: center;
+			margin: 10px;
+			background-color: #0069dc;
+			
+		}
+		#direction2 h3{
+			color: #ffffff !important;
+		}
+		#direction3{
+			text-align: center;
+			margin: 10px;
+			background-color: #8bdc59;
+		}
+		#direction3 h3{
+			color: #ffffff !important;
+		}
+		
 /* Spotlight */
 
 	.spotlight {
@@ -3604,10 +3637,10 @@ input, select, textarea {
 
 		#main header.major h1:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: -webkit-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: -ms-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
+			background-image: -moz-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: -webkit-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: -ms-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
 		}
 
 		#main table tbody tr {
