@@ -99,8 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: rgb(28,37,51);
-		background: linear-gradient(180deg, rgba(28,37,51,1) 50%, rgba(42,67,70,1) 85%, rgba(54,94,88,1) 90%, rgba(76,143,120,1) 95%, rgba(116,230,177,1) 100%);
+		background: white;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -117,8 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		color: black;
 	}
 
 	body, input, select, textarea {
@@ -312,7 +310,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: black;
 	}
 
 	blockquote {
@@ -3009,6 +3007,39 @@ input, select, textarea {
 
 		}
 
+		/* directions*/
+		#directions{
+			
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		#direction1{
+			text-align: center;
+			margin: 10px;
+			background-color: #ffb800;
+		}
+		#direction1 h3{
+			color: #ffffff !important;
+		}
+		#direction2{
+			text-align: center;
+			margin: 10px;
+			background-color: #0069dc;
+			
+		}
+		#direction2 h3{
+			color: #ffffff !important;
+		}
+		#direction3{
+			text-align: center;
+			margin: 10px;
+			background-color: #8bdc59;
+		}
+		#direction3 h3{
+			color: #ffffff !important;
+		}
+		
 /* Spotlight */
 
 	.spotlight {
@@ -3340,12 +3371,27 @@ input, select, textarea {
 						background-color: rgba(222, 222, 222, 0.25);
 					}
 
-					#nav ul li a.active {
-						background-color: #74E6B1;
+					#nav1.active {
+						background-color: #ffb800;
 						color: #33435C;
 						box-shadow: none;
 					}
 
+					#nav2.active {
+						background-color: #8bdc59;
+						color: #33435C;
+						box-shadow: none;
+					}
+					#nav3.active {
+						background-color: #ec6316;
+						color: white;
+						box-shadow: none;
+					}
+					#nav4.active {
+						background-color: #0069dc;
+						color: white;
+						box-shadow: none;
+					}
 		#nav.alt {
 			position: fixed;
 			top: 0;
@@ -3591,10 +3637,10 @@ input, select, textarea {
 
 		#main header.major h1:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: -webkit-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: -ms-linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
-			background-image: linear-gradient(90deg, #74E6B1, #B0F8FD, #F19C79);
+			background-image: -moz-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: -webkit-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: -ms-linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
+			background-image: linear-gradient(90deg, #ec6316, #ffB800, #8bdc59, #0069dc);
 		}
 
 		#main table tbody tr {
