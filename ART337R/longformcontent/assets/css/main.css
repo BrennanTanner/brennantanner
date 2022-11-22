@@ -3195,8 +3195,9 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					margin-bottom: -30px;
-					max-width: 35%;
+					margin-bottom: -100px;
+					margin-top: -150px;
+					max-width: 55%;
 				}
 
 		@media screen and (max-width: 1280px) {
