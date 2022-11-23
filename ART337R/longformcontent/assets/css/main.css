@@ -3014,13 +3014,23 @@ input, select, textarea {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 
+		.directionDiv {
+			background-color: #e0e0e0;
+			margin: 10px;
+			padding: 0px 20px;
+		border-radius: 1em;
+		}
+
+
 		#direction1{
 			text-align: center;
 			margin: 10px;
 			background-color: #ffb800;
+
 		}
 		#direction1 h3{
-			color: #ffffff !important;
+			color: #3f3f3f !important;
+			
 		}
 		#direction2{
 			text-align: center;
@@ -3030,6 +3040,7 @@ input, select, textarea {
 		}
 		#direction2 h3{
 			color: #ffffff !important;
+			
 		}
 		#direction3{
 			text-align: center;
@@ -3071,14 +3082,15 @@ input, select, textarea {
 
 		.spotlight .image {
 			display: inline-block;
-			margin-left: 4em;
+			
 		}
 
 			.spotlight .image img {
 				display: block;
-				width: 35em;
-				margin: -40px;
-				
+				width: 80%;
+				margin-top: -800px;
+				padding-left: 30px;
+			
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3133,8 +3145,7 @@ input, select, textarea {
 			}
 
 				.spotlight .image img {
-					width: 22em;
-					margin-right: 0em;
+
 				}
 
 		}
@@ -3671,6 +3682,8 @@ input, select, textarea {
 		#main .spotlight .image {
 			border-color: #dddddd;
 		}
+
+
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
