@@ -3295,24 +3295,31 @@ table.alt tbody tr td {
 }
 
 .directionDiv {
-   background-color: #e0e0e0;
+   background-color: #33435c;
    margin: 10px;
    padding: 0px 20px;
    border-radius: 1em;
+}
+
+.directionDiv  p{
+   color: #ffffff;
+   
 }
 
 #direction1 {
    text-align: center;
    margin: 10px;
    background-color: #ffb800;
+	border-radius: 1em;
 }
 #direction1 h3 {
-   color: #3f3f3f !important;
+   color: #33435c !important;
 }
 #direction2 {
    text-align: center;
    margin: 10px;
    background-color: #0069dc;
+	border-radius: 1em;
 }
 #direction2 h3 {
    color: #ffffff !important;
@@ -3321,9 +3328,10 @@ table.alt tbody tr td {
    text-align: center;
    margin: 10px;
    background-color: #8bdc59;
+	border-radius: 1em;
 }
 #direction3 h3 {
-   color: #ffffff !important;
+   color: #33435c !important;
 }
 
 /* Spotlight */
