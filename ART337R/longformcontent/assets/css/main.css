@@ -2513,6 +2513,15 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
+		ul.actions.youtube {
+       display: flex;
+		 flex-wrap: wrap;
+		justify-content: center;
+		}
+
+		ul.actions li {
+	margin: 6px;
+		  }
 			ul.actions.special li:first-child {
 				padding-left: 0;
 			}
