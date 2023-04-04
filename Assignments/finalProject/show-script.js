@@ -5,7 +5,7 @@ var showid = url.searchParams.get("id");
 const requestURL =
    "https://api.themoviedb.org/3/tv/" +
    showid +
-   "?api_key=8f1e70e82efeefd9c20bf8c8ffeaee9b&language=en-US";
+   "?api_key=8f1e70e82efeefd9c20bf8c8ffeaee9b&language=en-US&region=en-US";
 
 fetch(requestURL)
    .then(function (response) {
